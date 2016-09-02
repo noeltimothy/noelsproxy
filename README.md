@@ -1,17 +1,19 @@
-# timsproxy
+# noelsproxy
 A lightning fast and feather-lite HTTP/S proxy 
 
 -------------
 
-timsproxy is a completely free and open-source HTTP/S proxy built in Node.js with the intention
+noelsproxy is a completely free and open-source HTTP/S proxy built in Node.js with the intention
 to be the world's fastest and light-weight proxy possible.
 
 # Key Features
-Supports HTTP and HTTPS
-Uses minimum Network resources
-Creates certificates on the fly and caches them
-Built asynchronously for best performance
-Provides Request/Response handlers
+<ul> 
+<li> Supports HTTP and HTTPS</li>
+<li> Uses minimum Network resources</li>
+<li> Creates certificates on the fly and caches them</li>
+<li> Built asynchronously for best performance</li>
+<li> Provides Request/Response handlers</li>
+</ul>
 
 # Some great Use Cases
 <ul> 
@@ -26,19 +28,19 @@ Provides Request/Response handlers
 </ul>
 
 # Internals
-timsproxy works like most well known proxies such as Squid, Fiddler, Charles Proxy, etc.
+noelsproxy works like most well known proxies such as Squid, Fiddler, Charles Proxy, etc.
 You can setup timsproxy between a client and Server to intercept both requests and responses.
 You can also intercept HTTP connects before a HTTPS connection starts.
 
 # Install
 ```js
-npm install timsproxy
-var timsproxy = require('timsproxy')
+npm install noelsproxy
+var noelsproxy = require('noelsproxy')
 ```
 require just returns a namespace.
 
 # Create an instance
-timsproxy runs two servers, one is a http server and another is a https server.
+noelsproxy runs two servers, one is a http server and another is a https server.
 Users need to provide two separate ports on which these servers run. The first argument is
 the port to be used for the HTTP server and the second argument is for the HTTPS server.
 All clients only need to change their browser settings to pass traffic to the HTTP server.
@@ -46,7 +48,7 @@ All clients only need to change their browser settings to pass traffic to the HT
 // HTTP listens on 1000 and HTTPS listens on 4000. Both listen on 127.0.0.1
 // Client browsers pass all traffic to '127.0.0.1:1000'. The port number 4000 is used
 // internally
-var myProxy = new timsproxy (1000, 4000) 
+var myProxy = new noelsproxy (1000, 4000) 
 ```
 
 More super examples to come
