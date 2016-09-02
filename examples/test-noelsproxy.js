@@ -1,5 +1,5 @@
 
-var noelsproxy = require ('./noelsproxy.js')
+var noelsproxy = require ('noelsproxy')
 
 var p = new noelsproxy (1000, 4000)
 
