@@ -14,14 +14,16 @@ Built asynchronously for best performance
 Provides Request/Response handlers
 
 # Some great Use Cases
-Filter requests based on URLs
-Filter responses based on response types
-Record browsing history
-Automatically add Safe Search options to interested sites
-Filter ads from web pages
-Filter sexually explicit content
-Implement your own content scraping to check if web services are compromised
-Endless list of possibilities
+<ul> 
+<li> Filter requests based on URLs </li>
+<li> Filter responses based on response types </li>
+<li> Record browsing history </li>
+<li> Automatically add Safe Search options to interested sites </li>
+<li> Filter ads from web pages </li>
+<li> Filter sexually explicit content </li>
+<li> Implement your own content scraping to check if web services are compromised </li>
+<li> Endless list of possibilities </li>
+</ul>
 
 # Internals
 timsproxy works like most well known proxies such as Squid, Fiddler, Charles Proxy, etc.
@@ -45,7 +47,7 @@ All clients only need to change their browser settings to pass traffic to the HT
 // Client browsers pass all traffic to '127.0.0.1:1000'. The port number 4000 is used
 // internally
 var myProxy = new timsproxy (1000, 4000) 
-'''
+```
 
 More super examples to come
 
