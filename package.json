@@ -1,0 +1,29 @@
+{
+  "name": "timsproxy",
+  "version": "1.0.0",
+  "description": "A lightning fast and feather-lite HTTP/S proxy",
+  "main": "lib/timsproxy.js",
+  "directories": {
+    "example": "examples"
+  },
+  "scripts": {
+    "test": "examples/test-timsproxy.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/noeltimothy/timsproxy.git"
+  },
+  "keywords": [
+    "nodejitsu",
+    "http",
+    "https",
+    "proxy",
+    "node.js"
+  ],
+  "author": "Timothy Noel <tnoelhere@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/noeltimothy/timsproxy/issues"
+  },
+  "homepage": "https://github.com/noeltimothy/timsproxy#readme"
+}
