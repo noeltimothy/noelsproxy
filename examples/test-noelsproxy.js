@@ -1,7 +1,7 @@
 
-var timsproxy = require ('./timsproxy.js')
+var noelsproxy = require ('./noelsproxy.js')
 
-var p = new timsproxy (1000, 4000)
+var p = new noelsproxy (1000, 4000)
 
 p.on ('onConnect', function () {
 })
