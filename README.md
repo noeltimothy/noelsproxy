@@ -51,6 +51,23 @@ All clients only need to change their browser settings to pass traffic to the HT
 var myProxy = new noelsproxy (1000, 4000) 
 ```
 
+# Intercepting requests
+A great use case here is to enforce safesearch on google. Hitting google images with a wrong search keyword can reveal adult and inappropriate content. This is bad for schools, educational institutions, NGO's and organizations that wish to follow ethical browsing standards.
+
+An easy way to do this, is to use google's safeseach url parameter "&safe=active" and add this to every search request.
+After request handling, the request can be continued or blocked using the third parameter cb.
+Use cb.continue (this, req, res) to continue and cb.block(this, req, res) to send 'Blocked' to the browser.
+
+```js
+myProxy.on ('onRequest', function (req, res, cb) {
+  var self = this;
+  if (req.headers.host.match ('google.com') && (req.url != '/') ) {
+    req.url += "&safe=active";
+  }
+  cb.continue(self, req, res)
+}
+```
+
 More super examples to come
 
 
