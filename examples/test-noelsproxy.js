@@ -12,7 +12,7 @@ p.on ('onRequest', function (req, res, cb) {
 	console.log ("Got req to =" + req.headers.host)
 
 	// test google safesearch enforcement
-	if (req.headers.host.match('google.com')) {
+	if (req.headers.host.match('www.google.com') && (req.url != '/')) {
 		req.url += '&safe=active'
 	}
 
