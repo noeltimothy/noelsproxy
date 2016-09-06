@@ -1,11 +1,9 @@
 
-var noelsproxy = require ('noelsproxy')
+var noelsproxy = require ('../lib/noelsproxy')
 
 var p = new noelsproxy (1000, 4000)
-
 p.on ('onConnect', function () {
 })
-
 p.on ('onResponse', function (res) {
 })
 
