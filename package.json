@@ -25,5 +25,8 @@
   "bugs": {
     "url": "https://github.com/noeltimothy/noelsproxy/issues"
   },
-  "homepage": "https://github.com/noeltimothy/noelsproxy#readme"
+  "homepage": "https://github.com/noeltimothy/noelsproxy#readme",
+  "dependencies": {
+    "parse-url": "^9.2.0"
+  }
 }
