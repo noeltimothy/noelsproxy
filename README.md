@@ -1,10 +1,9 @@
 # noelsproxy
-A lightning fast and feather-lite HTTP/S proxy 
-
+The world's first full-fledged HTTPS proxy built using nodeJS!
 -------------
 
-noelsproxy is a completely free and open-source HTTP/S proxy built in Node.js with the intention
-to be the world's fastest and light-weight proxy possible.
+noelsproxy is open-source under the MIT LICENSE.
+This is a HTTP/S proxy built in Node.js with the intention to be the world's fastest and light-weight proxy possible. Although a faster version can be built using C++, we chose to build it on node since node can handle concurrent connections at scale. Performance can be increased by deploying on a large scale Kubernetes or Docker cluster for large environments. We are also collaborating with hardware accelerators to be able to work at line speeds.
 
 # Key Features
 <ul> 
